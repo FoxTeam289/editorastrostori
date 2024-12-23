@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Сделать текст заглавными буквами",
+    "item": {
+      "id": "caps",
+      "type": "checkbox",
+      "name": "caps",
+      "checked": false
+    }
+  },
+  {
+    "title": "Показать названия созвездий",
+    "item": {
+      "id": "constellation",
+      "type": "checkbox",
+      "name": "constellation",
+      "checked": false
+    }
+  }
+]

@@ -1,2 +1,4 @@
-import TemplateName from "./TemplateName.astro";
+/** @format */
+
+import TemplateName from "./TemplateName";
 export default TemplateName;

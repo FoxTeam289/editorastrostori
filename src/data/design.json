@@ -1,0 +1,40 @@
+{
+  "title": {
+    "text": "Дизайн",
+    "type": "h2"
+  },
+  "items": [
+    {
+      "id": "black",
+      "img": true,
+      "price": 1990,
+      "type": "radio",
+      "name": "design",
+      "checked": true
+    },
+    {
+      "id": "classic",
+      "img": true,
+      "price": 1990,
+      "type": "radio",
+      "name": "design",
+      "checked": false
+    },
+    {
+      "id": "white",
+      "img": true,
+      "price": 1990,
+      "type": "radio",
+      "name": "design",
+      "checked": false
+    },
+    {
+      "id": "transparent",
+      "img": true,
+      "price": 2990,
+      "type": "radio",
+      "name": "design",
+      "checked": false
+    }
+  ]
+}

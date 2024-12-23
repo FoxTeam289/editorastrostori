@@ -1,0 +1,41 @@
+{
+  "title": {
+    "text": "Размер",
+    "type": "h2",
+    "more": "Сравнить размеры"
+  },
+  "items": [
+    {
+      "id": "21x30",
+      "type": "radio",
+      "name": "size",
+      "text": "21x30 см",
+      "checked": true,
+      "price": 1
+    },
+    {
+      "id": "30x40",
+      "type": "radio",
+      "name": "size",
+      "text": "30x40 см",
+      "checked": false,
+      "price": 500
+    },
+    {
+      "id": "40x50",
+      "type": "radio",
+      "name": "size",
+      "text": "40x50 см",
+      "checked": false,
+      "price": 900
+    },
+    {
+      "id": "50x70",
+      "type": "radio",
+      "name": "size",
+      "text": "50x70 см",
+      "checked": false,
+      "price": 1600
+    }
+  ]
+}

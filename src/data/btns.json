@@ -1,0 +1,12 @@
+[
+  {
+    "id": "show-sky",
+    "text": "Показать звёздную карту",
+    "theme": "light"
+  },
+  {
+    "id": "create-sky",
+    "text": "Создать карту",
+    "theme": "dark"
+  }
+]

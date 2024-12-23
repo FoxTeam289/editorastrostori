@@ -1,0 +1,22 @@
+{
+  "title": {
+    "text": "Выберите язык созвездий",
+    "type": "h3"
+  },
+  "items": [
+    {
+      "id": "ru",
+      "type": "radio",
+      "name": "language",
+      "text": "Ru",
+      "checked": true
+    },
+    {
+      "id": "en",
+      "type": "radio",
+      "name": "language",
+      "text": "En",
+      "checked": false
+    }
+  ]
+}

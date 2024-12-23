@@ -1,0 +1,10 @@
+{
+  "title": "Добавить крепление на стену",
+  "item": {
+    "id": "fastening",
+    "type": "checkbox",
+    "name": "fastening",
+    "checked": false,
+    "price": 149
+  }
+}

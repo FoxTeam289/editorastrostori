@@ -1,2 +1,4 @@
-import Popup from "./Popup.astro";
+/** @format */
+
+import Popup from "./Popup";
 export default Popup;
