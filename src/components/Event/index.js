@@ -1,4 +1,2 @@
-/** @format */
-
-import Event from "./Event";
+import Event from "./Event.astro";
 export default Event;

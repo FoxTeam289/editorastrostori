@@ -6,16 +6,17 @@
   "component": {
     "default": {
       "customTemplates": {
-        "component": "templates/default/TemplateName.jsx",
-        "index": "templates/default/index.js",
-        "style": "templates/default/styles.js"
+        "component": "templates/default/TemplateName.astro",
+        "data": "templates/default/data.js",
+        "index": "templates/default/index.js"
       },
-      "path": "src/components/Stars",
+      "path": "src/components",
       "withLazy": false,
       "withStory": false,
-      "withStyle": true,
+      "withStyle": false,
       "withTest": false,
-      "withIndex": true
+      "withIndex": true,
+      "withData": true
     }
   },
   "usesStyledComponents": true

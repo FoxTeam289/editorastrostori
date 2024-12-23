@@ -1,4 +1,2 @@
-/** @format */
-
-import Stars from "./Stars";
+import Stars from "./Stars.astro";
 export default Stars;

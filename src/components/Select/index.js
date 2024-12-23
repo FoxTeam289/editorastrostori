@@ -1,4 +1,2 @@
-/** @format */
-
-import Select from "./Select";
+import Select from "./Select.astro";
 export default Select;

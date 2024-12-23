@@ -1,0 +1,78 @@
+---
+import Title from "../Title";
+import Design from "../Design";
+import DesignStand from "../DesignStand";
+import Size from "../Size";
+import Event from "../Event";
+import Text from "../Text";
+import Select from "../Select";
+import TypeMap from "../TypeMap";
+import ShowStars from "../ShowStars";
+import AddMount from "../AddMount";
+import Stars from "../Stars";
+
+import Total from "../Total";
+import T762 from "../T762";
+---
+
+<div class="map">
+  <div class="content">
+    <div class="content__wrap">
+      <T762 />
+      <Title />
+      <Design />
+      <DesignStand />
+      <Size />
+      <Event />
+      <Text title="Фраза на карте" name="phrase-on-the-map" />
+      <Select />
+      <Text
+        title="Дайте своё название месту события"
+        name="give-your-event-name"
+      />
+      <TypeMap />
+      <ShowStars />
+      <AddMount />
+      <Stars />
+
+      <Total />
+    </div>
+  </div>
+</div>
+<style lang="scss">
+  @import "../styles/settings";
+
+  .map {
+    width: 100%;
+  }
+
+  .content {
+    background-color: #fff;
+
+    @include des {
+      border-radius: d(60);
+      padding: d(80) 0 d(100);
+    }
+
+    @include mob {
+      border-radius: m(20);
+      padding: m(30) m(10) m(40);
+    }
+
+    &__wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include des {
+        width: d(1200);
+        padding-right: d(610);
+        margin: 0 auto;
+      }
+
+      @include mob {
+      }
+    }
+  }
+</style>

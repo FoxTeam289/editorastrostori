@@ -1,4 +1,2 @@
-/** @format */
-
-import Total from "./Total";
+import Total from "./Total.astro";
 export default Total;

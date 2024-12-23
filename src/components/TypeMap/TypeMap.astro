@@ -1,0 +1,130 @@
+---
+import { data } from "./data";
+
+const { title, items } = data;
+---
+
+<div class="size">
+  {title && <h2 class="size__title">{title}</h2>}
+  {
+    items && (
+      <div class="size__items">
+        {items.map(({ id, text, name, price, active }) => (
+          <div class="item">
+            <input
+              class="item__input"
+              id={id}
+              type="radio"
+              value={text}
+              name={name}
+              data-price={price ? price : 0}
+              checked={active ? true : false}
+              data-type-map
+              data-checked
+            />
+            <label class="item__label" for={id}>
+              {text}
+            </label>
+          </div>
+        ))}
+      </div>
+    )
+  }
+</div>
+<style lang="scss">
+  @import "../styles/settings";
+
+  .size {
+    width: 100%;
+
+    @include des {
+      margin: d(25) 0 d(20);
+    }
+
+    @include mob {
+      margin-bottom: m(30);
+    }
+
+    &__title {
+      color: #241f1f;
+      font-weight: 500;
+      line-height: 130%;
+
+      @include des {
+        font-size: d(18);
+        letter-spacing: d(-0.54);
+        margin-bottom: d(12);
+      }
+
+      @include mob {
+        font-size: m(15);
+        letter-spacing: m(-0.45);
+        margin-bottom: m(12);
+      }
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include des {
+        grid-gap: d(10);
+      }
+
+      @include mob {
+        grid-gap: m(10);
+      }
+    }
+  }
+
+  .item {
+    width: 100%;
+
+    &__input {
+      display: none;
+
+      &:checked + label {
+        border-color: #eb503e;
+      }
+    }
+
+    &__label {
+      color: #241f1f;
+      font-weight: 500;
+      line-height: 130%;
+      border-style: solid;
+      border-color: #e7e4e4;
+      background-color: #fff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include easy(border-color);
+
+      @include des {
+        height: d(60);
+        border-radius: d(16);
+        border-width: d(1);
+
+        font-size: d(15);
+        letter-spacing: d(-0.3);
+      }
+
+      @include mob {
+        width: 100%;
+        padding: m(12) m(20);
+        border-radius: m(10);
+
+        font-size: m(12);
+        letter-spacing: m(-0.24);
+        border-width: m(1);
+      }
+
+      &:is(:hover) {
+        border-color: #eb503e;
+        cursor: pointer;
+      }
+    }
+  }
+</style>
