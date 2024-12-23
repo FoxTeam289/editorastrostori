@@ -1,19 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Map from '../components/Map';
+import Layout from "../layouts/Layout.astro";
+import Popup from "../components/Popup";
 ---
 
 <Layout title="Индивидуальный Браслет">
-	<Map />
+  <Popup />
 </Layout>
 
 <script>
-	import { main } from '../scripts/main';
+  import { initScript } from "../scripts/initScript";
 
-	main();
+  initScript();
 </script>
-<script is:inline src="/map-code/stuquery.min.js"></script>
-<script is:inline src="/map-code/virtualsky.min.js"></script>
-<script is:inline src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/canvg/1.5/canvg.min.js"></script>
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>

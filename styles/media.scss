@@ -1,4 +1,6 @@
-$mediaDesktop: 576px;
+/** @format */
+
+$mediaDesktop: 480px;
 $mediaMobile: $mediaDesktop - 1px;
 
 @mixin des {
