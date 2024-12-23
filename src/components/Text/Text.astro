@@ -1,0 +1,116 @@
+---
+import { data } from "./data";
+
+const { title, name } = Astro.props;
+---
+
+<div class="text" data-text>
+  {title && <h2 class="text__title">{title}</h2>}
+  <div class="text__wrap">
+    <textarea
+      class="text__input"
+      placeholder={data.text ? data.text : ""}
+      data-input-text={name}
+      name={name}></textarea>
+  </div>
+</div>
+<style lang="scss">
+  @import "../styles/settings";
+
+  .text {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: "Не может быть пустым";
+      position: absolute;
+      color: red;
+      @include easy(all);
+
+      opacity: 0;
+      visibility: hidden;
+
+      @include des {
+        font-size: d(12);
+        left: d(2);
+        bottom: d(-12);
+      }
+
+      @include mob {
+        font-size: m(10);
+        left: m(2);
+        bottom: m(-10);
+      }
+    }
+
+    &.error::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @include des {
+      margin-bottom: d(15);
+    }
+
+    @include mob {
+    }
+
+    &__title {
+      color: #241f1f;
+      font-weight: 500;
+      line-height: 130%;
+
+      @include des {
+        margin-bottom: d(12);
+        font-size: d(18);
+        letter-spacing: d(-0.54);
+      }
+
+      @include mob {
+        margin-bottom: m(12);
+        font-size: m(15);
+        letter-spacing: m(-0.45);
+      }
+    }
+
+    &__wrap {
+      position: relative;
+    }
+
+    &__input {
+      resize: none;
+      width: 100%;
+      border-style: solid;
+      border-color: #e7e4e4;
+      background-color: #fff;
+
+      color: #6b6663;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+      font-family: inherit;
+
+      @include easy(border-color);
+
+      @include des {
+        border-width: d(1);
+        border-radius: d(18);
+        height: d(80);
+        padding: d(22) d(54) d(22) d(22);
+        font-size: d(14);
+      }
+
+      @include mob {
+        border-width: m(1);
+        border-radius: m(12);
+        height: m(52);
+        padding: m(12) m(36) m(12) m(12);
+        font-size: 16px;
+      }
+
+      .error & {
+        border-color: red;
+      }
+    }
+  }
+</style>

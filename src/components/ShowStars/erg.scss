@@ -1,0 +1,31 @@
+* {
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    position: relative;
+    aspect-ratio: 1/1;
+
+    @include des {
+      width: d(22);
+    }
+
+    @include mob {
+    }
+
+    & svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  transition: opacity 0.3s ease 0s;
+
+  input {
+    &:checked {
+    }
+  }
+}
